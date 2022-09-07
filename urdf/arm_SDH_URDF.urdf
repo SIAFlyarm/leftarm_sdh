@@ -4,8 +4,7 @@
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="arm_SDH_URDF">
-  <link
-    name="base_link">
+  <link name="base_link">
     <inertial>
       <origin xyz="-0.0016563 4.9408E-05 0.012674" rpy="0 0 0" />
       <mass value="0.18432" />
@@ -33,8 +32,7 @@
       </geometry>
     </collision>
   </link>
-  <link
-    name="Link_1">
+  <link name="Link_1">
     <inertial>
       <origin xyz="-0.00020652 0.017828 0.14762" rpy="0 0 0" />
       <mass value="1.4796" />
@@ -104,13 +102,13 @@
     </collision>
   </link>
   <joint name="joint_2" type="revolute">
-    <origin xyz="0 0 0.2035" rpy="1.5708 0 0" />
+    <origin xyz="0 0 0.2035" rpy="1.5708 -1.5708 0" />
     <parent link="Link_1" />
     <child link="Link_2" />
     <axis xyz="0 0 -1" />
     <limit
-      lower="-3.14"
-      upper="0"
+      lower="-1.75"
+      upper="1.75"
       effort="1"
       velocity="0.01" />
   </joint>
