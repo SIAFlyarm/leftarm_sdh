@@ -1,5 +1,5 @@
 <package format="2">
-  <name>arm_SDH_URDF</name>
+  <name>leftarm_sdh</name>
   <version>1.0.0</version>
   <description>
     <p>URDF Description package for arm_SDH_URDF</p>
